@@ -46,7 +46,6 @@
   <h3>Analog Reader Slice for BREAD.</h3>
 </div>
 
-
 ## Introduction
 [Provide a brief introduction to the project, including the motivation and goals. Explain the significance and context of the research.]
 
