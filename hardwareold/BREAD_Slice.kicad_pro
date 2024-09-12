@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.1,
-          "height": 2.3,
-          "width": 2.3
+          "drill": 0.762,
+          "height": 1.524,
+          "width": 1.524
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -49,16 +49,10 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.5
+          "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        }
-      ],
+      "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -113,6 +107,7 @@
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
+        "zone_has_empty_net": "error",
         "zones_intersect": "error"
       },
       "rule_severitieslegacy_courtyards_overlap": true,
@@ -121,7 +116,7 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.1,
+        "min_clearance": 0.0,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.025,
         "min_hole_clearance": 0.25,
@@ -132,7 +127,7 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.2,
+        "min_through_hole_diameter": 0.3,
         "min_track_width": 0.2,
         "min_via_annular_width": 0.05,
         "min_via_diameter": 0.4,
@@ -184,10 +179,7 @@
       ],
       "track_widths": [
         0.0,
-        0.5,
-        1.0,
-        1.5,
-        3.0
+        0.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -215,24 +207,7 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        },
-        {
-          "diameter": 0.5,
-          "drill": 0.0
-        },
-        {
-          "diameter": 1.0,
-          "drill": 0.5
-        },
-        {
-          "diameter": 1.5,
-          "drill": 1.0
-        }
-      ],
+      "via_dimensions": [],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -428,6 +403,7 @@
     "rule_severities": {
       "bus_definition_conflict": "error",
       "bus_entry_needed": "error",
+      "bus_label_syntax": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
       "conflicting_netclasses": "error",
@@ -487,23 +463,6 @@
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 1.25,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 1,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "HV Relay",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 3.0,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
-        "wire_width": 6
       }
     ],
     "meta": {
@@ -511,64 +470,7 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": [
-      {
-        "netclass": "",
-        "pattern": ""
-      },
-      {
-        "netclass": "HV Relay",
-        "pattern": "NC2"
-      },
-      {
-        "netclass": "HV Relay",
-        "pattern": "NO2"
-      },
-      {
-        "netclass": "HV Relay",
-        "pattern": "ESTOP2"
-      },
-      {
-        "netclass": "HV Relay",
-        "pattern": "HV Line"
-      },
-      {
-        "netclass": "HV Relay",
-        "pattern": "ESTOPA2"
-      },
-      {
-        "netclass": "HV Relay",
-        "pattern": "IN2"
-      },
-      {
-        "netclass": "HV Relay",
-        "pattern": "ESTOPB2"
-      },
-      {
-        "netclass": "HV Relay",
-        "pattern": "FUSE2"
-      },
-      {
-        "netclass": "HV Relay",
-        "pattern": "NC1"
-      },
-      {
-        "netclass": "HV Relay",
-        "pattern": "NO1"
-      },
-      {
-        "netclass": "HV Relay",
-        "pattern": "IN1"
-      },
-      {
-        "netclass": "HV Relay",
-        "pattern": "ESTOP1"
-      },
-      {
-        "netclass": "HV Relay",
-        "pattern": "FUSE1"
-      }
-    ]
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
@@ -578,7 +480,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "BREAD_Slice.step",
+      "step": "",
       "svg": "",
       "vrml": ""
     },
@@ -662,7 +564,7 @@
       "operating_point_overlay_v_precision": 3,
       "operating_point_overlay_v_range": "~V",
       "overbar_offset_ratio": 1.23,
-      "pin_symbol_size": 25.0,
+      "pin_symbol_size": 0.0,
       "text_offset_ratio": 0.08
     },
     "legacy_lib_dir": "",
@@ -694,32 +596,8 @@
   },
   "sheets": [
     [
-      "66043bca-a260-4915-9fce-8a51d324c687",
+      "c8c79177-94d4-43e2-a654-f0a5554fbb68",
       "Root"
-    ],
-    [
-      "60815c20-cfa8-41c0-a67f-4daf5a1cae97",
-      "Low Voltage Analog Input"
-    ],
-    [
-      "9d919dd3-7f2b-4f23-af50-06a634423884",
-      "Low Voltage Analog Input1"
-    ],
-    [
-      "f23dae82-3db5-4e73-9013-764601b14f1e",
-      "Low Voltage Analog Input2"
-    ],
-    [
-      "28ba9b75-9e7e-4963-b9d1-ad7a0e535a5f",
-      "Low Voltage Analog Input3"
-    ],
-    [
-      "78e33b68-c3d7-466f-95a7-7fcca0c8fee4",
-      "Low Voltage Analog Input4"
-    ],
-    [
-      "ba2b2ebb-68b3-41fa-b050-7f48c7a64abf",
-      "Low Voltage Analog Input5"
     ]
   ],
   "text_variables": {}

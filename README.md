@@ -10,7 +10,7 @@ Low-Voltage Analog Input Reader Slice for BREAD.
 
 [Explain how to use the project. Include examples and screenshots if applicable.]
 
-## Documentation
+## Documentation 
 
 Please refer to the [docs](/docs) for more info.
 
