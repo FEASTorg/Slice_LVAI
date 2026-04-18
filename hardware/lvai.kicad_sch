@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "12e3ae4d-1200-42cd-9451-ee42e3a69f5d")
 	(paper "A4")
 	(lib_symbols
@@ -96,17 +96,17 @@
 						(type background)
 					)
 				)
-				(pin output line
-					(at 7.62 0 180)
+				(pin input line
+					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "~"
+					(name "+"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -132,17 +132,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -7.62 2.54 0)
+				(pin output line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "+"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -250,24 +250,6 @@
 						)
 					)
 				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at -7.62 -2.54 0)
 					(length 2.54)
@@ -279,6 +261,24 @@
 						)
 					)
 					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -357,24 +357,6 @@
 			)
 			(symbol "MCP6004_5_1"
 				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
 					(at -2.54 7.62 270)
 					(length 3.81)
 					(name "V+"
@@ -392,11 +374,32 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "BREAD_Slice-rescue:10k_t-OCI_UPL_1_Resistors"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -542,9 +545,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "BREAD_Slice-rescue:1K-OCI_UPL_1_Resistors"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -672,11 +678,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "BREAD_Slice-rescue:1uF_t-OCI_UPL_2_Capacitors"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -790,9 +801,9 @@
 					)
 				)
 				(arc
-					(start 2.032 -1.27)
+					(start -2.032 -1.27)
 					(mid 0 -0.5572)
-					(end -2.032 -1.27)
+					(end 2.032 -1.27)
 					(stroke
 						(width 0.508)
 						(type default)
@@ -840,7 +851,228 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 64.77 59.69)
+		(end 115.57 101.6)
+		(stroke
+			(width 0.762)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 1f5a1d82-e51d-45fa-989a-11ee1eda99a7)
+	)
+	(rectangle
+		(start 168.91 59.69)
+		(end 219.71 101.6)
+		(stroke
+			(width 0.762)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 2c1d3a12-deb8-4d7b-bedb-4eb471027c9c)
+	)
+	(rectangle
+		(start 22.86 59.69)
+		(end 63.5 101.6)
+		(stroke
+			(width 0.762)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 3a518e89-d329-46a3-b593-39f0584728e5)
+	)
+	(rectangle
+		(start 220.98 59.69)
+		(end 271.78 101.6)
+		(stroke
+			(width 0.762)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 70374d0c-7b10-4421-90fb-6599b87628a2)
+	)
+	(rectangle
+		(start 116.84 59.69)
+		(end 167.64 101.6)
+		(stroke
+			(width 0.762)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid a53d2cad-efff-4d0f-9491-2f6d7dba83fa)
+	)
+	(text "Voltage Reference (Offset)"
+		(exclude_from_sim no)
+		(at 90.424 99.06 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+		)
+		(uuid "1cfa132f-3e69-4d38-979b-252dbd62c76f")
+	)
+	(text "Differential Amplifier"
+		(exclude_from_sim no)
+		(at 143.002 98.552 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+		)
+		(uuid "4f04327a-cfe8-49a5-a952-861dd5f5bb0d")
+	)
+	(text "Power Supply Decoupling"
+		(exclude_from_sim no)
+		(at 43.18 99.06 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+		)
+		(uuid "5b86ba43-e5ef-485c-8545-03addbef1eeb")
+	)
+	(text "Low-Pass Filter"
+		(exclude_from_sim no)
+		(at 247.904 98.552 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+		)
+		(uuid "84c5d0ee-0d9f-409d-a6e0-ffcbd78b3e1c")
+	)
+	(text "Adjustable Gain Amplifier"
+		(exclude_from_sim no)
+		(at 194.31 98.806 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+		)
+		(uuid "8d2dd1a2-c527-40cd-a968-bd5de3d4fd52")
+	)
+	(text_box "The 10k potentiometer forms a voltage divider, creating an adjustable reference voltage that is buffered by the op-amp UxA, configured as a voltage follower, to isolate the reference signal from any input variations. "
+		(exclude_from_sim no)
+		(at 64.77 101.6 0)
+		(size 50.8 26.67)
+		(margins 1.3335 1.3335 1.3335 1.3335)
+		(stroke
+			(width 0.762)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "090a8516-bacb-4b43-8348-0e85b527c509")
+	)
+	(text_box "Provides variable gain by adjusting the feedback resistance using a 10k potentiometer. Op-amp UxC is in an inverting amplifier configuration and the gain is adjustable by varying the resistance of the potentiometer, allowing control over the output signal amplitude:\n\nVout = - ((R + RV) / RV) * Vin\nVout_rv10k = 1.10 * Vin \nVout_rv05k = 1.20 * Vin \nVout_rv03k = 1.33 * Vin \nVout_rv01k = 2.00 * Vin \n"
+		(exclude_from_sim no)
+		(at 168.91 101.6 0)
+		(size 50.8 26.67)
+		(margins 1.3335 1.3335 1.3335 1.3335)
+		(stroke
+			(width 0.762)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "0e9e6291-8a37-483d-afd9-52e166390f71")
+	)
+	(text_box "This is to feed the power rails of the quad op amp with a capacitor to decouple noise from the power supply."
+		(exclude_from_sim no)
+		(at 22.86 101.6 0)
+		(size 40.64 26.67)
+		(margins 1.3335 1.3335 1.3335 1.3335)
+		(stroke
+			(width 0.762)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "49d7f303-3107-40d5-9e58-ad4bbb0acdec")
+	)
+	(text_box "Attenuates high-frequency noise using a low-pass filter formed by the 1kΩ resistor and the 1μF capacitor. Op-amp UxD is configured as a buffer (voltage follower) to maintain signal integrity and ensure a stable filtered analog output.\n\nThe cut-off frequency is:\nfc = 1/(2*pi*R*C)\nfc = 159.15 Hz"
+		(exclude_from_sim no)
+		(at 220.98 101.6 0)
+		(size 50.8 26.67)
+		(margins 1.3335 1.3335 1.3335 1.3335)
+		(stroke
+			(width 0.762)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "5c60ded7-bdc2-4b38-b47e-c5b7cabd094f")
+	)
+	(text_box "Amplifies the difference between the input signal and the reference voltage. Op-amp UxB is configured in a differential amplifier configuration with 1kΩ resistors (unity gain). The circuit amplifies the differential signal while rejecting common-mode noise, with an output of Vout = V+ - V-.\n"
+		(exclude_from_sim no)
+		(at 116.84 101.6 0)
+		(size 50.8 26.67)
+		(margins 1.3335 1.3335 1.3335 1.3335)
+		(stroke
+			(width 0.762)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "bcafc4de-2503-461e-9c3c-deba0b5e485a")
 	)
 	(junction
 		(at 36.83 95.25)
@@ -1446,224 +1678,8 @@
 		)
 		(uuid "f4d80b6f-910f-42bc-8cb3-df2f7abb858a")
 	)
-	(rectangle
-		(start 64.77 59.69)
-		(end 115.57 101.6)
-		(stroke
-			(width 0.762)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 1f5a1d82-e51d-45fa-989a-11ee1eda99a7)
-	)
-	(rectangle
-		(start 168.91 59.69)
-		(end 219.71 101.6)
-		(stroke
-			(width 0.762)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 2c1d3a12-deb8-4d7b-bedb-4eb471027c9c)
-	)
-	(rectangle
-		(start 22.86 59.69)
-		(end 63.5 101.6)
-		(stroke
-			(width 0.762)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 3a518e89-d329-46a3-b593-39f0584728e5)
-	)
-	(rectangle
-		(start 220.98 59.69)
-		(end 271.78 101.6)
-		(stroke
-			(width 0.762)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 70374d0c-7b10-4421-90fb-6599b87628a2)
-	)
-	(rectangle
-		(start 116.84 59.69)
-		(end 167.64 101.6)
-		(stroke
-			(width 0.762)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid a53d2cad-efff-4d0f-9491-2f6d7dba83fa)
-	)
-	(text_box "The 10k potentiometer forms a voltage divider, creating an adjustable reference voltage that is buffered by the op-amp UxA, configured as a voltage follower, to isolate the reference signal from any input variations. "
-		(exclude_from_sim no)
-		(at 64.77 101.6 0)
-		(size 50.8 26.67)
-		(stroke
-			(width 0.762)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "090a8516-bacb-4b43-8348-0e85b527c509")
-	)
-	(text_box "Provides variable gain by adjusting the feedback resistance using a 10k potentiometer. Op-amp UxC is in an inverting amplifier configuration and the gain is adjustable by varying the resistance of the potentiometer, allowing control over the output signal amplitude:\n\nVout = - ((R + RV) / RV) * Vin\nVout_rv10k = 1.10 * Vin \nVout_rv05k = 1.20 * Vin \nVout_rv03k = 1.33 * Vin \nVout_rv01k = 2.00 * Vin \n"
-		(exclude_from_sim no)
-		(at 168.91 101.6 0)
-		(size 50.8 26.67)
-		(stroke
-			(width 0.762)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "0e9e6291-8a37-483d-afd9-52e166390f71")
-	)
-	(text_box "This is to feed the power rails of the quad op amp with a capacitor to decouple noise from the power supply."
-		(exclude_from_sim no)
-		(at 22.86 101.6 0)
-		(size 40.64 26.67)
-		(stroke
-			(width 0.762)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "49d7f303-3107-40d5-9e58-ad4bbb0acdec")
-	)
-	(text_box "Attenuates high-frequency noise using a low-pass filter formed by the 1kΩ resistor and the 1μF capacitor. Op-amp UxD is configured as a buffer (voltage follower) to maintain signal integrity and ensure a stable filtered analog output.\n\nThe cut-off frequency is:\nfc = 1/(2*pi*R*C)\nfc = 159.15 Hz"
-		(exclude_from_sim no)
-		(at 220.98 101.6 0)
-		(size 50.8 26.67)
-		(stroke
-			(width 0.762)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "5c60ded7-bdc2-4b38-b47e-c5b7cabd094f")
-	)
-	(text_box "Amplifies the difference between the input signal and the reference voltage. Op-amp UxB is configured in a differential amplifier configuration with 1kΩ resistors (unity gain). The circuit amplifies the differential signal while rejecting common-mode noise, with an output of Vout = V+ - V-.\n"
-		(exclude_from_sim no)
-		(at 116.84 101.6 0)
-		(size 50.8 26.67)
-		(stroke
-			(width 0.762)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "bcafc4de-2503-461e-9c3c-deba0b5e485a")
-	)
-	(text "Voltage Reference (Offset)"
-		(exclude_from_sim no)
-		(at 90.424 99.06 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-				(thickness 0.3048)
-				(bold yes)
-			)
-		)
-		(uuid "1cfa132f-3e69-4d38-979b-252dbd62c76f")
-	)
-	(text "Differential Amplifier"
-		(exclude_from_sim no)
-		(at 143.002 98.552 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-				(thickness 0.3048)
-				(bold yes)
-			)
-		)
-		(uuid "4f04327a-cfe8-49a5-a952-861dd5f5bb0d")
-	)
-	(text "Power Supply Decoupling"
-		(exclude_from_sim no)
-		(at 43.18 99.06 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-				(thickness 0.3048)
-				(bold yes)
-			)
-		)
-		(uuid "5b86ba43-e5ef-485c-8545-03addbef1eeb")
-	)
-	(text "Low-Pass Filter"
-		(exclude_from_sim no)
-		(at 247.904 98.552 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-				(thickness 0.3048)
-				(bold yes)
-			)
-		)
-		(uuid "84c5d0ee-0d9f-409d-a6e0-ffcbd78b3e1c")
-	)
-	(text "Adjustable Gain Amplifier"
-		(exclude_from_sim no)
-		(at 194.31 98.806 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-				(thickness 0.3048)
-				(bold yes)
-			)
-		)
-		(uuid "8d2dd1a2-c527-40cd-a968-bd5de3d4fd52")
-	)
 	(label "5V"
 		(at 41.91 71.12 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1674,7 +1690,6 @@
 	)
 	(label "5V"
 		(at 76.2 69.85 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1685,7 +1700,6 @@
 	)
 	(label "GND"
 		(at 196.85 93.98 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1696,7 +1710,6 @@
 	)
 	(label "GND"
 		(at 76.2 90.17 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1707,7 +1720,6 @@
 	)
 	(label "GND"
 		(at 236.22 93.98 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1718,7 +1730,6 @@
 	)
 	(label "GND"
 		(at 133.35 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1729,7 +1740,6 @@
 	)
 	(label "GND"
 		(at 46.99 95.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1741,7 +1751,6 @@
 	(hierarchical_label "5V"
 		(shape input)
 		(at 21.59 71.12 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1753,7 +1762,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 21.59 95.25 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1765,7 +1773,6 @@
 	(hierarchical_label "out"
 		(shape input)
 		(at 274.32 78.74 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1777,7 +1784,6 @@
 	(hierarchical_label "in"
 		(shape input)
 		(at 21.59 57.15 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
